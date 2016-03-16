@@ -1,12 +1,12 @@
 defmodule Fluent do
-  def add(ref, tag, options // []) do
+  def add_handler(ref, tag, options \\ []) do
     host = options[:host] || "localhost"
     port = options[:port] || 24224
 
-    :gen_event.add_handler(ref, Fluent.Handler, { tag, host, port })
+    :gen_event.add_handler(ref, Fluent.Handler, {tag, host, port})
   end
 
   def post(ref, tag, data) do
-    :gen_event.notify(ref, { tag, data })
+    :gen_event.notify(ref, {tag, data})
   end
 end

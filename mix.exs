@@ -2,9 +2,9 @@ defmodule Fluent.Mixfile do
   use Mix.Project
 
   def project do
-    [ app: :fluent,
+    [app: :fluent,
       version: "0.0.1",
-      deps: deps ]
+      deps: deps]
   end
 
   def application do
@@ -12,6 +12,6 @@ defmodule Fluent.Mixfile do
   end
 
   defp deps do
-    [{ :message_pack, github: "mururu/msgpack-elixir" }]
+    [{:msgpax, "~> 0.8"}]
   end
 end

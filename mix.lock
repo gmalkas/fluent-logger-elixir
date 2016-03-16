@@ -1,1 +1,1 @@
-[ "message_pack": {:git, "git://github.com/mururu/msgpack-elixir.git", "62f561f670ac00944cfba5f52edffc24a3498c34", []} ]
+%{"msgpax": {:hex, :msgpax, "0.8.2"}}
